@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Random Recipe</title>
+  </head>
+
+  <body>
+    <h1>Recipe: {{ item.name }}</h1>
+    <h5>Prep time: {{ item.time }}</h5>
+    <ul id="random">
+      <li>Instructions: {{ item.instructions }}</li>
+      <li>Ingredients: {{ item.ingredients }}</li>
+      <li>Serves: {{ item.yields }}</li>
+      <li>
+        Link: <a href="{{ item.url }}">{{ item.url }}</a>
+      </li>
+    </ul>
+  </body>
+</html>
